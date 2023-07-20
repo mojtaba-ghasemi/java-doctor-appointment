@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "8d31e56c-43b7-4a9e-afb2-b38d37bbaae9",
+		"name": "Doctor’s appointment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14215683"
+	},
+	"item": [
+		{
+			"name": "createDoctor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ali\",\r\n    \"family\":\"Mohammadi\",\r\n    \"mobile\":\"091212345645\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Doctor/api/createDoctor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Doctor",
+						"api",
+						"createDoctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createPatient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "createPatient",
+					"host": [
+						"createPatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createAppointment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Appointment/api/createAppointment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Appointment",
+						"api",
+						"createAppointment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAppointmentsAsPatient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Appointment/api/findAppointmentsAsPatient/2023-07-10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Appointment",
+						"api",
+						"findAppointmentsAsPatient",
+						"2023-07-10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "takeAppointment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appointmentId\":\"82\",\r\n    \"name\": \"Nolofar\",\r\n    \"family\":\"Irani\",\r\n    \"mobile\":\"093598765432\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Appointment/api/takeAppointment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Appointment",
+						"api",
+						"takeAppointment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findTakenAppointments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Appointment/api/findTakenAppointments/090198765432",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Appointment",
+						"api",
+						"findTakenAppointments",
+						"090198765432"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAppointmentsAsDoctor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Appointment/api/findAppointmentsAsDoctor/66fa0729-a086-40cc-9575-49e833552d06",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Appointment",
+						"api",
+						"findAppointmentsAsDoctor",
+						"66fa0729-a086-40cc-9575-49e833552d06"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAppointmentByUuid",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Appointment/api/deleteAppointmentByUuid/9f513c14-84b5-4883-847d-a01936547101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Appointment",
+						"api",
+						"deleteAppointmentByUuid",
+						"9f513c14-84b5-4883-847d-a01936547101"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
